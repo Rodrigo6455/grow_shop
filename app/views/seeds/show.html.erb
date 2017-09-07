@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <center>
+    <img src="<%= @seed.image %>" alt="Launchpad's seed">
+  </center>
+  <h3>Nombree: <%= @seed.nombree %></h3>  
+  <h3>Raza: <%= @seed.raza %></h3>
+  <h3>Descripcion: <%= @seed.descripcion %></h3>
+  <h3>Costo: <%= @seed.costo %></h3>
+</div>
+Add Comment
+
+<%= link_to 'Edit', edit_seed_path(@seed) %> |
+<%= link_to 'Back', seed_path %>

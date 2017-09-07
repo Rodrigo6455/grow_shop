@@ -1,0 +1,19 @@
+<h1>All Launchpad's Seeds</h1>
+<div class="row">
+  <% @seeds.each do |seed| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="<%= seed.image %>" alt="launchpad's seed">
+      <div class="caption">
+        <h3><%= seed.nombree %></h3>
+        <h3>Cost: <%= seed.costo %></h3>
+        <%= link_to "More Info", seed, class: "btn btn-default" %>        
+      </div>
+    </div>    
+  </div>  
+  <% end %>
+</div>
+
+<br>
+
+<%= link_to "New Seed", new_seed_path, class: "btn btn-default" %>
